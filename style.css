@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+/*
+.caja {
+    width: 250px;
+    height: 205px;
+    background-color: orange;
+    padding: 25px;
+    border: 45px solid red;
+    margin: 45px;
+}
+@media all  and (max-width:450px) {
+    .caja{
+        background-color: green;
+        }
+}*/
+
+.foo {
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+}
+.bar{
+    height: 150px;
+    width: 150px;
+    background-color:bisque;
+}
+.baz{
+    height: 150px;
+    width: 150px;
+    background-color: beige;
+}
+
+.contenedor-flexible{
+    height:1080px;
+    background-color:rgb(243, 187, 104);
+    display: flex;
+    flex-direction:row; /* row -> establece un ejec principal en el eje x*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    align-content: space-around;
+}
+/*wrap permite que encaje a la siguiente fila mientras que nowrap quiere todo en una liena*/
+/*dejan de opcupar todo el esapcio y se ocupan de solo el texto.*/
+@media all  and () {
+    .contenedor-flexible{
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .foo .bar .baz{
+        width: 100%;
+    }
+}
+ /* row -> establece un ejec principal en el eje x*/
