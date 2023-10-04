@@ -17,30 +17,34 @@
         }
 }*/
 
-.foo {
+.foo{
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-shrink: 2;
     height: 150px;
-    width: 150px;
-    background-color: aqua;
+    background-color: aliceblue;
 }
 .bar{
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
     height: 150px;
-    width: 150px;
-    background-color:bisque;
+    background-color: antiquewhite;
 }
 .baz{
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
     height: 150px;
-    width: 150px;
-    background-color: beige;
+    background-color: aqua;
 }
 
 .contenedor-flexible{
-    height:1080px;
-    background-color:rgb(243, 187, 104);
     display: flex;
     flex-direction:row; /* row -> establece un ejec principal en el eje x*/
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
     align-content: space-around;
 }
 /*wrap permite que encaje a la siguiente fila mientras que nowrap quiere todo en una liena*/
